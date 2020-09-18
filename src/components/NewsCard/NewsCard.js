@@ -45,7 +45,6 @@ const NewsCard = ({
       )} /*activeCard is in the styles.js*/
     >
       <CardActionArea href={url} target="_blank">
-        /*Clickable section of card*/
         <CardMedia
           className={classes.media}
           image={
@@ -55,7 +54,8 @@ const NewsCard = ({
         />
         <div className={classes.details}>
           <Typography variant="body2" color="textSecondary" component="h2">
-            {new Date(publishedAt).toDateString}
+            {new Date(publishedAt).toDateString}{" "}
+            {/*Puts date in an easy readable format*/}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="h2">
             {source.name}

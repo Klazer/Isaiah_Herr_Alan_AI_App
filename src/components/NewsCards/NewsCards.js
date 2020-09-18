@@ -84,7 +84,7 @@ const NewsCards = ({ articles, activeArticle }) => {
       >
         {articles.map((
           article,
-          i /*For each article we map, we put iti nto a card */
+          i /*For each article we map, we put it into a card */
         ) => (
           <Grid item xs={12} sm={6} md={4} lg={3} style={{ display: "flex" }}>
             {/* xs has 12 grid spaces total*/}
